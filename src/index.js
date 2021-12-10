@@ -1,3 +1,3 @@
-console.log('Webpack is correctly set up.');
+import './style.css';
 
-document.querySelector('#content').innerHTML = '<p>Webpack is correctly set up.</p>';
+console.log('Webpack is correctly set up.');
