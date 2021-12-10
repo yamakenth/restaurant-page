@@ -32,13 +32,16 @@
   box-sizing: border-box;
 }
 
-body {
+#content {
   height: 100vh;
   background-image: url('cafe-background.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: #ffffff;
   font-family: 'Cormorant Garamond', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
 
 h3 {
@@ -64,4 +67,9 @@ h3 {
   justify-content: space-between;
   align-items: center;
   gap: 18px;
+}
+
+.display-area {
+  flex: 1;
+  border: 1px solid #ff0000;
 }

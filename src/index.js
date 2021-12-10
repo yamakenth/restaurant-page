@@ -22,7 +22,10 @@ const createHeader = (() => {
   const contact = document.createElement('h3');
   contact.classList.add('contact-nav');
   contact.textContent = 'Contact';
-  
+  // display area 
+  const displayArea = document.createElement('div');
+  displayArea.classList.add('display-area');
+
   // append nav to nav bar 
   nav.appendChild(home);
   nav.appendChild(menu);
@@ -30,7 +33,8 @@ const createHeader = (() => {
   // append elements to header 
   header.appendChild(logo);
   header.appendChild(nav);
-  // append header to page 
+  // append elements to page 
   content.appendChild(header);
+  content.appendChild(displayArea);
 })();
 
