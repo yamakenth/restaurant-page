@@ -3,10 +3,12 @@ import { createHome } from './home';
 import { createMenu } from './menu';
 import { createContatct } from './contact';
 import './style.css';
+import { addNavAnimation } from './animation';
 
 // when page load
 createTheme();
 const displayArea = document.querySelector('.display-area');
+addNavAnimation();
 createHome(displayArea);
 
 // when home button is clicked 
