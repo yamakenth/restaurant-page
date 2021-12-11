@@ -101,3 +101,14 @@ h4 {
   text-align: center;
 }
 
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 160px;
+  text-align: center;
+}
+
+#map-image {
+  height: 360px;
+  width: auto;
+}
