@@ -35,17 +35,18 @@ function createSection(sectionName, title, items) {
   // create container div 
   const section = document.createElement('div');
   section.classList.add(`${sectionName}-section`);
+  section.classList.add('menu-subsection');
   // title of section 
-  const h3 = document.createElement('h3');
-  h3.textContent = title;
-  section.appendChild(h3);
+  const h2 = document.createElement('h2');
+  h2.textContent = title;
+  section.appendChild(h2);
   // append each menu item to section 
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
-    const p = document.createElement('p')
-    p.classList.add(item.className);
-    p.textContent = `${item.name} (${item.size} - ${item.price})`;
-    section.appendChild(p);
+    const h4 = document.createElement('h4')
+    h4.classList.add(item.className);
+    h4.textContent = `${item.name} (${item.size} - ${item.price})`;
+    section.appendChild(h4);
   }
 
   return section;
