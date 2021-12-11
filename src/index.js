@@ -13,25 +13,24 @@ createHome(displayArea);
 const homeNav = document.querySelector('.home-nav');
 homeNav.addEventListener('click', () => {
   clearDisplayArea();
+  createHome(displayArea);
 });
 
 // when menu button is clicked 
 const menuNav = document.querySelector('.menu-nav');
 menuNav.addEventListener('click', () => {
   clearDisplayArea();
+  createMenu(displayArea);
 });
 
 // when contact button is clicked 
 const contactNav = document.querySelector('.contact-nav');
 contactNav.addEventListener('click', () => {
   clearDisplayArea();
+  createContatct(displayArea);
 });
 
-
-
-// createMenu(displayArea);
-// createContatct(displayArea);
-
+// clear display area when switching tabs 
 function clearDisplayArea() {
   console.log('click');
   let child = displayArea.lastElementChild;
@@ -40,4 +39,3 @@ function clearDisplayArea() {
     child = displayArea.lastElementChild;
   }
 }
-
