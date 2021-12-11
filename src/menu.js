@@ -1,3 +1,24 @@
+const coffeeInput = [
+  { className: 'americano', name: 'Americano', size: '200ml', price: '$3.00' },
+  { className: 'cappucino', name: 'Cappucino', size: '200ml', price: '$3.20' },
+  { className: 'macchiato', name: 'Macchiato', size: '200ml', price: '$3.35' },
+  { className: 'espresso', name: 'Espresso', size: '100ml', price: '$2.95' },
+  { className: 'mocha', name: 'Mocha', size: '200ml', price: '$3.30' },
+]
+const hotDrinksInput = [
+  { className: 'hotChocolate', name: 'Hot Chocolate', size: '200ml', price: '$3.00' },
+  { className: 'whiteChocolate', name: 'White hocolate', size: '200ml', price: '$3.20' },
+  { className: 'vanilaTea', name: 'Vanila Tea', size: '200ml', price: '$3.35' },
+  { className: 'greenTea', name: 'Green Tea', size: '200ml', price: '$2.95' },
+]
+const dessertInput = [
+  { className: 'sweets', name: 'Sweets', size: '100g', price: '$4.20' },
+  { className: 'cupcake', name: 'Cupcake', size: '100g', price: '$3.80' },
+  { className: 'doughnut', name: 'Doughnut', size: '200g', price: '$4.35' },
+  { className: 'croissant', name: 'Croissant', size: '150g', price: '3.95' },
+  { className: 'cheesecake', name: 'Cheesecake', size: '150g', price: '$4.30' },
+]
+
 function createMenu(displayArea) {
   // coffee section 
   const coffeeSection = document.createElement('div');
@@ -85,9 +106,7 @@ function createMenu(displayArea) {
   dessertSection.appendChild(croissant);
   dessertSection.appendChild(cheesecake);
 
-
-
-  
+  // append all divs to display area
   displayArea.appendChild(coffeeSection);
   displayArea.appendChild(hotDrinksSection);
   displayArea.appendChild(dessertSection);
