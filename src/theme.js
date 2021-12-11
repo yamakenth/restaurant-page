@@ -10,13 +10,13 @@ function createTheme() {
   // nav bar 
   const nav = document.createElement('div');
   nav.classList.add('nav');
-  const home = document.createElement('h3');
+  const home = document.createElement('button');
   home.classList.add('home-nav');
   home.textContent = 'Home';
-  const menu = document.createElement('h3');
+  const menu = document.createElement('button');
   menu.classList.add('menu-nav');
   menu.textContent = 'Menu';
-  const contact = document.createElement('h3');
+  const contact = document.createElement('button');
   contact.classList.add('contact-nav');
   contact.textContent = 'Contact';
   // display area 
