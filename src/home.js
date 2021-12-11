@@ -6,9 +6,11 @@ function createHome(displayArea) {
 
   const mainImage = new Image();
   mainImage.src = coffeeImage;
+  mainImage.id = 'main-image';
 
   const description = document.createElement('h3');
   description.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis aenean et tortor at risus. At auctor urna nunc id cursus metus aliquam eleifend mi.'
+  description.classList.add('description');
 
   displayArea.appendChild(h2);
   displayArea.appendChild(mainImage);

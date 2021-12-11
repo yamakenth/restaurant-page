@@ -44,6 +44,10 @@
   justify-content: stretch;
 }
 
+h2 {
+  font-size: 40px;
+}
+
 h3 {
   font-size: 26px;
 }
@@ -71,4 +75,20 @@ h3 {
 
 .display-area {
   flex: 1;
+  background-color: #00000090;
+  margin: 34px 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#main-image {
+  height: 360px;
+  width: auto;
+}
+
+.description {
+  text-align: center;
 }
