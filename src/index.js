@@ -1,3 +1,4 @@
+import { createHome } from './home';
 import './style.css';
 
 const content = document.querySelector('#content');
@@ -37,4 +38,7 @@ const createHeader = (() => {
   content.appendChild(header);
   content.appendChild(displayArea);
 })();
+
+createHome(document.querySelector('.display-area'));
+
 
